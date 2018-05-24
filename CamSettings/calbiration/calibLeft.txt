@@ -1,0 +1,22 @@
+header: 
+  seq: 31
+  stamp: 
+    secs: 1487068913
+    nsecs: 870084285
+  frame_id: tcp_stereo_left_rect
+height: 964
+width: 1292
+distortion_model: plumb_bob
+D: [-0.0536623, 0.0695705, 0.0, 0.0, 0.0]
+K: [1103.66, 0.732537, 639.079, 0.0, 1103.35, 442.789, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [1103.51, 0.0, 646.0, 0.0, 0.0, 1103.51, 482.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False
+
