@@ -1,3 +1,3 @@
 # sv_math_functions
-A set of implemented helpful fucntions for stereovision system:
+A set of helpful implementations for stereovision system:
 - Sub_pixel_interpolation
