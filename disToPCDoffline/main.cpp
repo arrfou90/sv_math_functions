@@ -60,7 +60,7 @@ void disparityToPointcloud (const int &width,
     }
 
      // write PCD file
-   pcl::io::savePCDFileASCII ("/home/user/disToPCDoffline/build/cloud.pcd", cloud);
+   pcl::io::savePCDFileASCII ("./../3Ddata/cloud.pcd", cloud);
     std::cout<<"point cloud IS SAVED "<<".width: "<<cloud.width <<"cloud.height: "
     << cloud.height<<"cloud size: "<<cloud.points.size()<< std::endl;
 }
@@ -71,8 +71,8 @@ int main(int argc, char** argv) {
 	float focal =1392;
 
 	float depth_scale = baseline*focal*1000; 
-	cv::Mat disparity_im = cv::imread("/home/user/Downloads/sgm/example/left/0000000015.png"); 
-	cv::Mat leftStereoUndistorted = cv::imread("/home/user/Downloads/sgm/example/disparities/0000000015.png"); 
+	cv::Mat disparity_im = cv::imread("./../left/0000000015.png"); 
+	cv::Mat leftStereoUndistorted = cv::imread("./../disparities/0000000015.png"); 
 	std::cout<<"baseline = "<< baseline<<std::endl;
 	std::cout<<"focal_length_pixel = "<< focal<<std::endl;
 	Mat depthMap(disparity_im.rows, disparity_im.cols, CV_16SC1);
